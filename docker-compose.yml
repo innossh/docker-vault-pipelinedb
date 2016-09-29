@@ -1,0 +1,18 @@
+version: '2'
+services:
+  vault:
+    image: vault:0.6.1
+    ports:
+      - "8200"
+    environment:
+      VAULT_DEV_ROOT_TOKEN_ID: myroot
+  pipelinedb:
+    image: pipelinedb/pipelinedb:0.9.5
+    ports:
+      - "5432"
+  postgresql:
+    image: postgres:9.5.4
+    ports:
+      - "5432"
+    environment:
+      POSTGRES_PASSWORD: postgres
