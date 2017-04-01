@@ -10,6 +10,10 @@ services:
     image: pipelinedb/pipelinedb:0.9.5
     ports:
       - "5432"
+  pipelinedb-097:
+    image: pipelinedb/pipelinedb:0.9.7
+    ports:
+      - "5432"
   postgresql:
     image: postgres:9.5.4
     ports:
