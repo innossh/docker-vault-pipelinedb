@@ -38,3 +38,4 @@ init_pipelinedb_fixed:
 clean:
 	docker-compose stop
 	docker-compose rm -f
+	rm -f tmp_*.log
